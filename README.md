@@ -20,6 +20,6 @@ This project aims to create your own operating system.
     - [ ] Secure Boot
     
 - Download
-   - [Download Lasted Version](/edition-alpha/version1.0)
+   - [Download Lasted Version](/alpha-edition)
 
 > Update in: 12/03/2022
