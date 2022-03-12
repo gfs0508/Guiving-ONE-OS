@@ -19,7 +19,7 @@ This project aims to create your own operating system.
     - [ ] Commands
     - [ ] Secure Boot
     
-- Download
+## Download
    - [Download Lasted Version](/alpha-edition)
 
 > Update in: 12/03/2022
