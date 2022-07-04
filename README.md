@@ -1,10 +1,51 @@
-# Guiving ONE OS
+<h1 align=center>
+:trophy: Guiving One OS :computer:
+<h1>
+<p align=center>
+  <img src="https://img.shields.io/github/downloads/GFS-0508/Guiving-ONE-OS/total.svg">
+  <img src="https://img.shields.io/github/watchers/GFS-0508/Guiving-ONE-OS.svg">
+  <img src="https://img.shields.io/github/stars/GFS-0508/Guiving-ONE-OS.svg">
+  <img src="https://img.shields.io/github/license/GFS-0508/Guiving-ONE-OS.svg">
+  <img src="https://img.shields.io/github/languages/count/GFS-0508/Guiving-ONE-OS">
+  <img src="https://img.shields.io/github/last-commit/GFS-0508/Guiving-ONE-OS">
+</p>
 
-![guiving-1-3](https://user-images.githubusercontent.com/88109863/158082356-62c021d8-360e-46ec-a085-2a5cc5357f7d.png)
+<p align=center>  
+<a>About | Updates and Versions | License</a>
+</p>
 
-## Description
+
+## :question:	 About
 - Guiving ONE OS is a very simple operating system written entirely in assembly.<br>
 - This project aims to create your own operating system.
+## :1st_place_medal: Updates and Versions
+- If you want to ask any questions or suggest an idea, visit this [link](https://github.com/GFS-0508/Guiving-ONE-OS/discussions)
+
+<details><summary>Alpha Edition v1.0</summary>
+
+ :bangbang: [**Download NOW**](../alpha-edition) :bangbang:
+ 
+> Update in: 12/03/2022
+ 
+ - Features
+    - [x] Bootloader
+    - [x] Kernel
+    - [x] Basic Introducion
+    - [ ] Keyboard
+    - [ ] Mouse
+    - [ ] File System
+    - [ ] Commands
+    - [ ] Secure Boot
+    - [ ] Promot Command
+
+</details>
+
+
+
+## :memo:	License
+
+## Description
+
 <hr>
 <details><summary>Versions</summary>
 
