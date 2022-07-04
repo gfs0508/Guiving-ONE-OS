@@ -23,7 +23,7 @@
 
 <details><summary>Alpha Edition v1.0</summary>
 
- :bangbang: [**Download NOW**](../alpha-edition) :bangbang:
+ :bangbang: [**Download NOW**](https://github.com/GFS-0508/Guiving-ONE-OS/tree/main/alpha-edition/version%201.0%20-%20stable) :bangbang:
  
 > Update in: 12/03/2022
  
