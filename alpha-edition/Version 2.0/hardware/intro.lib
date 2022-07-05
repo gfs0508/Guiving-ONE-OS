@@ -1,0 +1,23 @@
+; ==================================================================
+; Guiving ONE OS - Intro Library
+; Version 1.0.0
+; ==================================================================
+
+%IFNDEF __INTRO_LIB__
+%DEFINE __INTRO_LIB__
+
+
+; INTRO LIBRARY ____________________________________________________
+; __________________________________________________________________
+
+Position_X db 9
+Position_Y db 12
+
+nameOS db "Guiving ONE OS", 0
+stringnul db "", 0
+version db "Version 2.0", 0
+edition db "Alpha Edition", 0
+loading db "Loading...", 0
+
+
+%ENDIF

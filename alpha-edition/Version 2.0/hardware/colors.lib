@@ -1,0 +1,31 @@
+; ==================================================================
+; Guiving ONE OS - Colors Library Routines
+; Version 1.0.0
+; ==================================================================
+
+%IFNDEF __COLORS_LIB__
+%DEFINE __COLORS_LIB__
+
+; Colors Define - BIOS COLORS_______________
+;___________________________________________
+
+Color db 0
+Black db 0
+Blue db 1
+Green db 2
+Cyan db 3
+Red db 4
+Magenta db 5
+Brown db 6   
+LightGray db 7
+DarkGray db 8
+LightBlue db 9
+LightGreen db 10
+LightCyan db 11
+LightRed db 12
+LightMagenta db 13
+Yellow db 14
+White db 15
+
+
+%ENDIF

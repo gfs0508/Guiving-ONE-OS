@@ -1,0 +1,60 @@
+; ==================================================================
+; Guiving ONE OS - Disk/Memory Library Routines
+; Version 1.0.0
+; ==================================================================
+
+%IFNDEF __DISK_LIB__
+%DEFINE __DISK_LIB__
+
+; Disk & Memory Configurations _____________________________________
+;___________________________________________________________________
+
+
+
+SegmentAddr	  	dw 0000h
+OffestAddr	  	dw 0000h
+Sector 		  	db 0
+Track		  	db 0
+Head	      	db 0
+Drive 		  	db 0
+NumSectors	  	db 0
+
+Reader		  	db 02h
+Writer		  	db 03h
+
+SectorPerTrack	db 0
+TrackPerHead	db 0
+
+;___________________________________________________________________
+
+;Routines Library___________________________________________________
+;___________________________________________________________________
+
+ReadDisk:
+	mov ah, BYTE[Reader]
+	call DiskOperation
+ret
+
+WriteDisk:
+	mov ah, BYTE[Writer]
+	call DiskOperation
+ret
+	
+DiskOperation:
+	mov al, BYTE[NumSectors]
+	mov ch, BYTE[Track]
+	mov cl, BYTE[Sector]
+	mov dh, BYTE[Head]
+	mov dl, BYTE[Drive]
+	mov bx, WORD[SegmentAddr]
+	mov es, bx
+	mov bx, WORD[OffestAddr]
+	int 13h
+ret
+	
+	
+	
+
+;___________________________________________________________________
+
+%ENDIF

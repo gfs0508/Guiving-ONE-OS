@@ -1,0 +1,45 @@
+; ==================================================================
+; Guiving ONE OS - KEYBOARD Library Routines
+; Version 1.0.0
+; ==================================================================
+
+%IFNDEF __KEYBOARD_LIB__
+%DEFINE __KEYBOARD_LIB__
+
+; KEYBOARD Configuration _____________________________________________
+; __________________________________________________________________
+
+cli
+	;WRITE YOUR CODE HERE
+	mov edi, 0xB8000
+	mov ebx, ScanCodeTable
+	 mov ah,0x10
+	 int 16h 
+	 
+	 mov byte[edi],al 
+	 inc edi 
+	 inc edi 
+	;Check if Keyboard pressed
+	check_key:
+	in al, 0x64;
+	and al, 1;
+	jz check_key
+	
+	;If pressed get key
+	in al, 0x60;
+	
+	;translate key
+	cmp al, 0x80
+	jl check_key
+	
+	sub al, 0x80;
+	xlat
+	mov [edi], al;
+	inc edi;
+	inc edi;
+	jmp check_key
+	
+	;HexTable: db "0123456789ABCDEF";
+	ScanCodeTable: db "//1234567890-=//QWERTYUIOP[]//ASDFGHJKL;//'/ZXCVBNM,.//// /"
+
+%ENDIF

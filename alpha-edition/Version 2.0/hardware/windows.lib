@@ -1,0 +1,43 @@
+; ==================================================================
+; Guiving ONE OS - Memory Library Routines
+; Version 1.0.0
+; ==================================================================
+
+%IFNDEF __WMWMORY_LIB__
+%DEFINE __WMWMORY_LIB__
+
+%INCLUDE "hardware/colors.lib"
+
+
+; Memory Window Configurations______________________________________
+; __________________________________________________________________
+
+%DEFINE WindowAddress 	     0800h:0500h
+
+
+;Windows Templates:
+    ;Window1
+Win1_Width dw 000Ah
+Win1_Height dw 000Ah
+Win1_Page db 1
+Win1_Title db "Window 1", 0
+Win1_Border_Color dw 000Ah
+
+Error_Window_X dw 35
+Error_Window_Y dw 35
+Win_Error_Width dw 250
+
+Windows_Error:
+	mov cx, 35
+    mov dx, 35
+    Bar:
+		mov al, byte[Black]
+		int 10h
+		inc cx
+        cmp cx, 250
+		jnz Bar
+
+ret
+
+
+%ENDIF

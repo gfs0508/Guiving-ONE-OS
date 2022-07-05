@@ -1,0 +1,119 @@
+; ==================================================================
+; Guiving ONE OS - Monitor Library Routines
+; Version 1.0.0
+; ==================================================================
+
+%IFNDEF __MONITOR_LIB__
+%DEFINE __MONITOR_LIB__
+
+%INCLUDE "hardware/intro.lib"
+
+; Monitor & Window Configuration _____________________________________________
+; __________________________________________________________________
+
+Count       		dw 0000h
+
+BackWidth   dw 0000h
+BackHeight  dw 0000h
+BackColor   db 13
+Pagination  db 0
+CursorX     db 15
+CursorY     db 12
+State       db 0
+
+Intro_Window_Width dw 10
+Intro_Window_Height dw 10
+Intro_Window_X dw 10
+Intro_Window_Y dw 10
+
+
+
+; __________________________________________________________________
+
+; Rotine Library ___________________________________________________
+; __________________________________________________________________
+
+; Definir o modo de video e configura a posiçao padrao
+VGA.SetVideMode:
+    mov ah, 00h
+	mov al, 13h
+	int 10h
+	mov ax, 320
+	mov WORD[BackWidth], ax
+	mov ax, 200
+	mov WORD[BackHeight], ax
+	call DrawPixelConfig
+ret
+
+;funçao degravar pixeis na tela
+DrawPixelConfig:
+	mov ah, 0Ch
+	mov al, 8
+	mov cx, 0	;coluna 0
+	mov dx, 0	;fila 0
+ret
+
+; Printa o fundo na tela
+DrawBackround:
+	int 10h
+	inc cx
+	cmp cx, WORD[BackWidth]
+	jne DrawBackround
+	mov cx, 0
+	inc dx
+	cmp dx, WORD[BackHeight]
+	jne DrawBackround
+	mov dx, 0
+ret
+
+EffectInit:
+	call MoveCursor
+	mov si, nameOS
+	call PrintString
+
+PrintString:
+	mov ax, 1 ;BLUE
+    mov ah, 09h
+    mov bh, 1
+    mov cx, 1
+    mov al, [si]
+    print:
+        int 10h
+        inc si
+        call MoveCursor
+        mov ah, 09h
+        mov al, [si]
+        cmp al, 0
+        jne print
+ret
+
+MoveCursor:
+    mov ah, 02h
+    mov bh, 1
+    inc dl
+    int 10h
+ret
+
+ClearBackround:
+    mov ax, 320
+	mov WORD[BackWidth], ax
+	mov ax, 200
+	mov WORD[BackHeight], ax
+	mov ah, 0Ch
+	mov al, BYTE[Color]
+	mov cx, 0
+	mov dx, 0
+    ClearBackround_Draw:
+        int 10h
+	    inc cx
+	    cmp cx, WORD[BackWidth]
+	    jne ClearBackround_Draw
+	    mov cx, 0
+	    inc dx
+	    cmp dx, WORD[BackHeight]
+	    jne ClearBackround_Draw
+	    mov dx, 0
+ret
+
+
+%ENDIF
