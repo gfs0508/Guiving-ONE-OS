@@ -30,6 +30,7 @@
     - [ ] Keyboard
     - [ ] Mouse
     - [ ] Promot Command
+    - [ ] Applications Menu
 </details>
 
 <details><summary>Alpha Edition v1.0</summary>
