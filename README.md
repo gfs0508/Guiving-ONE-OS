@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/downloads/GFS-0508/Guiving-ONE-OS/total.svg">
   <img src="https://img.shields.io/github/watchers/GFS-0508/Guiving-ONE-OS.svg">
   <img src="https://img.shields.io/github/stars/GFS-0508/Guiving-ONE-OS.svg">
-  
+  <img src="https://img.shields.io/github/license/GFS-0508/Guiving-ONE-OS.svg">
   <img src="https://img.shields.io/github/languages/count/GFS-0508/Guiving-ONE-OS">
   <img src="https://img.shields.io/github/last-commit/GFS-0508/Guiving-ONE-OS">
 </p>
