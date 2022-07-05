@@ -17,9 +17,10 @@
 
 ## :question:	 About
 - Guiving ONE OS is a very simple operating system written entirely in assembly.<br>
-- This project aims to create your own operating system.
+- In the future I want to add new functions and make the OS 100% normal.
 ## :1st_place_medal: Updates and Versions
 - If you want to ask any questions or suggest an idea, visit this [link](https://github.com/GFS-0508/Guiving-ONE-OS/discussions)
+- If you want to join me, don't forget to contact me.
 
 <details><summary>Alpha Edition v2.0</summary>
 
