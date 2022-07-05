@@ -23,7 +23,7 @@
 
 <details><summary>Alpha Edition v2.0</summary>
 
- :bangbang: [**Download NOW**]() :bangbang:
+ :bangbang: **Download Unavailable** :bangbang:
  
 > Update in: 05/07/2022
  - New possible updates
