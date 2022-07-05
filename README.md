@@ -21,6 +21,17 @@
 ## :1st_place_medal: Updates and Versions
 - If you want to ask any questions or suggest an idea, visit this [link](https://github.com/GFS-0508/Guiving-ONE-OS/discussions)
 
+<details><summary>Alpha Edition v2.0</summary>
+
+ :bangbang: [**Download NOW**]() :bangbang:
+ 
+> Update in: 05/07/2022
+ - New possible updates
+    - [ ] Keyboard
+    - [ ] Mouse
+    - [ ] Promot Command
+</details>
+
 <details><summary>Alpha Edition v1.0</summary>
 
  :bangbang: [**Download NOW**](https://github.com/GFS-0508/Guiving-ONE-OS/tree/main/alpha-edition/version%201.0%20-%20stable) :bangbang:
