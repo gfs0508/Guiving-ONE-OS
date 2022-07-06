@@ -11,7 +11,7 @@
 </p>
 
 <p align=center>  
-<a>About | Updates and Versions | License</a>
+<a>About | Updates and Versions | License | Software </a>
 </p>
 
 
@@ -53,6 +53,14 @@
 
 </details>
 
-
-
 ## :memo:	License
+- License: MIT
+
+## :computer: Software
+- NASM
+- VS Code
+- VirtualBox
+- Fergo Raw Image Maker
+- Rufus Portable
+- Please visit this [link](https://github.com/GFS-0508/Guiving-ONE-OS/wiki/Software) for more details.
+
